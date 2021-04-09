@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Floating Quick Enquiry</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    select{
+      background: #f8f9fa;
+    border: 2px solid rgba(216, 216, 216, 0.3);
+    color: #777;
+    font-size: 16px;
+    padding: 12px 15px;
+    width: 100%;
+    border-radius: 4px;
+    height: 55px;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container text-center" style="padding:200px 20px;">
+    <h2>Floating Button Enquiry</h2>
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Enquiry
+    </button>
+  
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content"> 
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="contact-form" style="max-width: 450px; margin: 0 auto;">
+              <div class="form-mid">
+                <form action="javascript:sendmail()" method="post">
+                  <div class="field">
+                    <input type="text" class="form-control" name="Name" id="Name" placeholder="Full Name" required="">
+                  </div>
+                  <div class="field">
+                    <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email"
+                      required="">
+                  </div>
+                  <div class="field">
+                    <input type="text" class="form-control" name="Company" id="Company" placeholder="Company"
+                      required="">
+                  </div>
+                  <textarea name="Message" class="form-control" id="Message" placeholder="Message"
+                    required=""></textarea>
+                  <button type="submit" class="btn btn-contact">Send Message</button>
+                  <!-- <input type="button" class="btn btn-contact" onclick="sendmail();"  value="Send Message"> -->
+    
+                </form>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- contact1 -->
+ 
+  <!-- /contact1 -->
+  
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function sendmail(){
+    
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var company = $('#Company').val();
+      var message = $('#Message').val();
+      var ddr = $('ddr').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Company: '+company+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+			Email.send({
+                SecureToken: "ed91a5c3-639f-41c1-8804-90a9fff5176e",
+				To: 'yuvrajchaudhari011@gmail.com , amol.t@redbixbite.com',
+				From: "yuvrajchaudhari011@gmail.com",
+				Subject: "New Enquiry From "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
+
+				}
+			);
+
+
+
+		}
+
+
+    </script>
+ </script>
+
+</body>
+</html>
