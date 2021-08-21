@@ -14,7 +14,7 @@ body{
     z-index: 11;
     }
 .banner-fill{
-  height: 700px;
+  height: 620px;
   background-position: initial;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,6 +178,15 @@ body{
     display: inline-block;
     width: 77px;
 }
+.feature-box p a {color: #000000;text-decoration: none;transition: 0.4s;}
+.green-top-border p a:hover{color:#29d240;}
+.blue-top-border p a:hover{color: #5342ff;}
+.red-top-border p a:hover{color: #be1e2d;}
+.pink-top-border p a:hover{color: #ff42a3;}
+.yellow-top-border p a:hover{color:#fff200}
+.navi-blue-top-border p  a:hover{color: #2e3192;}
+.orange-top-border p a:hover{color: #f7941d;}
+.violet-top-border p a:hover{color:#c11d75;}
 
 /* ANimation Css */
 img.vert-move {
