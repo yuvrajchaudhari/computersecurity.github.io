@@ -1,221 +1,333 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{margin:0;padding:0;box-sizing: border-box;}
+body{
+    font-family: 'Poppins', sans-serif;
+/* font-family: 'Trirong', serif; */
+}
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff !important;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+    z-index: 11;
+    }
+.banner-fill{
+  height: 700px;
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-transparent {background-color: rgba(255, 255, 255, 0.3) !important;}
+.banner-fill h1{
+    color: #100672;
+    font-size: 48px;
+    font-family: 'Trirong', serif;
+    font-weight: 700;
 }
 
-textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0a506c;
+    font-weight: 500;
+    margin-left: 19px;
+    transition: 0.4s;
 }
 
-* {
-  box-sizing: border-box;
+.navbar-light .navbar-nav .nav-link:hover {color: #13097b;}
+
+.common-pd{padding: 60px 0px;}
+.section-title{
+    font-family: 'Trirong', serif;
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #012970;
+}
+.vdo-container{
+    padding: 15px;
+    box-shadow: -1px 7px 19px 15px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 7px 19px 15px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 7px 19px 15px rgba(0,0,0,0.75);
 }
 
-.wrapper {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+
+/* -------------------------Industries-----------  */
+.bg-solid{background-color: #f9f9f9;}
+.industries h5{
+    font-size: 15px;
+    text-align: center;
+}
+.Served{transition: transform .2s;}
+.Served:hover{
+    transform: scale(1.1);
 }
 
-@media (min-width: 576px) {
-  .wrapper {
-    max-width: 540px;
+.enquiry-cta{
+     height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.enquiry-button {
+    --c: rgb(220, 235, 17);
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
   }
-}
-
-@media (min-width: 768px) {
-  .wrapper {
-    max-width: 720px;
+  
+  .enquiry-button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
   }
-}
-
-@media (min-width: 992px) {
-  .wrapper {
-    max-width: 960px;
+  
+  .enquiry-button:hover {
+    color: black;
   }
-}
-
-@media (min-width: 1200px) {
-  .wrapper {
-    max-width: 1140px;
+  
+  .enquiry-button:hover span {
+    transform: translateY(0) scale(2);
   }
-}
-
-
-.d-grid {
-  display: grid;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-button,
-select {
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-button,
-.btn,
-select {
-  cursor: pointer;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-iframe {
-  border: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-/* Section top bottom gap */
-.section-gap {
-  padding: 4.5rem 0;
-}
-
-@media screen and (max-width:767px) {
-  .section-gap {
-    padding: 3.5rem 0;
+  
+  .enquiry-button span:nth-child(1) {
+    --n: 1;
   }
-}
-
-@media screen and (max-width:480px) {
-  .section-gap {
-    padding: 3rem 0;
+  .enquiry-button span:nth-child(2) {
+    --n: 2;
   }
-}
-
-/* / Section top bottom gap */
-
-/* title-styling */
-h3.global-title {
-  font-size: 40px;
-  line-height: 45px;
-  color: #16191e;
-  margin-bottom: 50px;
-  text-transform: capitalize;
-}
-
-@media screen and (max-width:767px) {
-  h3.global-title {
-    font-size: 40px;
-    line-height: 45px;
+  
+  .enquiry-button span:nth-child(3) {
+    --n: 3;
   }
-}
-
-@media screen and (max-width:600px) {
-  h3.global-title {
-    font-size: 35px;
-    line-height: 40px;
+  
+  .enquiry-button span:nth-child(4) {
+    --n: 4;
   }
+  
+
+/* ------------------Features section------------------- */
+.green-top-border{
+    border-top: 4px solid #29d240!important;
+    display: inline-block;
+    width: 77px;
+}
+.blue-top-border{
+    border-top: 4px solid #5342ff!important;
+    display: inline-block;
+    width: 77px;
 }
 
-@media screen and (max-width:500px) {
-  h3.global-title {
-    font-size: 30px;
-    line-height: 35px;
-  }
+.red-top-border{
+    border-top: 4px solid #be1e2d!important;
+    display: inline-block;
+    width: 77px;
 }
 
-/* / title-styling */
-/* simple contact form */
-.contact-form {
-  background: #eee;
+.pink-top-border{
+    border-top: 4px solid #ff42a3!important;
+    display: inline-block;
+    width: 77px;
 }
 
-.field {
-  margin-bottom: 20px;
+.yellow-top-border{
+    border-top: 4px solid #fff200!important;
+    display: inline-block;
+    width: 77px;
 }
 
-.form-mid {
-  background: #fff;
-  padding: 3rem;
-  border: 1px solid #eee;
-  border-radius: 4px;
+.navi-blue-top-border{
+    border-top: 4px solid #2e3192!important;
+    display: inline-block;
+    width: 77px;
 }
 
-.form-mid form input,
-.form-mid form textarea {
-  background: #f8f9fa;
-  border: 2px solid rgba(216, 216, 216, 0.3);
-  color: #777;
-  font-size: 16px;
-  padding: 12px 15px;
-  width: 100%;
-  border-radius: 4px;
-  height: 55px;
+.orange-top-border{
+    border-top: 4px solid #f7941d!important;
+    display: inline-block;
+    width: 77px;
 }
 
-.form-mid form textarea {
-  resize: none;
-  min-height: 140px;
+.violet-top-border{
+    border-top: 4px solid #c11d75!important;
+    display: inline-block;
+    width: 77px;
 }
 
-.form-mid form input:focus,
-.form-mid form textarea:focus {
-  outline: none;
-  border: 2px solid #051b35;
-  background: #fff;
-  box-shadow: none;
+/* ANimation Css */
+img.vert-move {
+    display: block;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move1 {
+    display: block;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover1 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@-webkit-keyframes mover1 {
+    0% { transform: translateY(-10); }
+    100% { transform: translateY(6px); }
+}
+@keyframes mover1 {
+    0% { transform: translateY(-10); }
+    100% { transform: translateY(5px); }
 }
 
-button.btn-contact {
-  border: none;
-  font-size: 16px;
-  padding: 15px 30px;
-  margin: 20px auto 0;
-  color: #fff;
-  background: #ff4c4c;
-  border-color: #ff4c4c;
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
+
+/* Benefits Section */
+.benefits{
+    background-image: url(../images/benifit-bg.jpg);
+    height: 650px;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.benifit-list li{position: relative;list-style: none;}
+.benifit-list li span{position: absolute;top: 0;padding-left: 10px;}
+.benefit-img{padding-top: 120px;}
+
+.usp{position: relative;}
+.usp::before{
+    content: '';
+    background: url(../images/left-usp.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    background-position: left bottom;
+    background-size: 249px;
+    z-index: 0;
+}
+.usp::after{
+    content: '';
+    background: url(../images/right-usp.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    background-position: right bottom;
+    background-size: 249px;
+    z-index: 0;
+}
+.home-blog h5{color: #3935aa;}
+.home-blog p {font-size: 15px;}
+
+/* Testimonial Section */
+.testimonial {
+    background-image: url(../images/testmonial-bg.jpg);
+    height: 310px;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-@media(max-width: 568px) {
-  .form-mid {
-    padding: 1.5rem;
-  }
+.testimonial-info{
+    padding: 20px;
+    background-color: rgba(255,255,255,0.6);
+}
+.testimonial-info h5 {border-top: 5px solid #f9f9f9;
+    width: 115px;}
+    .quote-mt{margin-top: -40px;}
+
+    .input-group-addon.primary {
+        color: rgb(255, 255, 255);
+        background-color: rgb(50, 118, 177);
+        border-color: rgb(40, 94, 142);
+        padding: 11px 8px;
+    }
+
+
+    /* News Room  */
+    .news-room input {
+        padding: 1.4rem .75rem !important;
+    }
+    .news-room {position: relative;}
+    .news-room::before{
+        content: '';
+        background: url(../images/mailid-bg-img.png) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        background-position: right bottom;
+        background-size: 200px;
+        z-index: 0;
+    }
+
+    /* Footer section */
+
+
+    footer{
+        background-image: url(../images/footer-bg.png);
+        height: 310px;
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+.footer-links{text-align: center;}
+    .footer-links li {
+        list-style: none;
+        padding: 8px 0px;
+        
+    }
+    .footer-links li a{color: rgb(44, 39, 39);text-decoration: none;}
+    .footer-links li a:hover{color: blue;}
+
+
+/* ----------------------Media Query---------------------- */
+@media (max-width: 768px){
+    .fixed-top {
+        background-color: #fff;
+    }
+    .enquiry-cta {
+        height: auto;
+    }
+    .benefits {
+        height: auto;}
+        .usp::before,.usp::after{display: none;}
+        footer{
+            height: auto;
+        }
+        .footer-links{text-align: initial;}
 }
 
-/* /simple contact form */
