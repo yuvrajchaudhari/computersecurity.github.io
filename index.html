@@ -1,15 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>PSD Demo</title> 
-<style> 
-body{margin:0 auto; text-align:center; padding-right: 1px; background:url(images/index-bg.png) center top no-repeat #ffffff;}
-</style> 
-</head> 
- 
-<body> 
-		<img src="images/index.jpg" /> 
-</body> 
-</html> 
+    <title>Orionzi WMS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Orionzi Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How it Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner section -->
+    <section>
+        <div class="banner-fill d-flex align-items-center" style="background-image:url('images/main-bg-banner.jpg');">
+            <div class="container">
+                <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-6 d-flex align-items-center">
+                                    <h1>
+                                        Genex Solutions... <br>
+                                        To Save Your Time
+                                    </h1>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-center">
+                                    <img src="images/slider1.png" alt="slider1" class="img-fluid w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6 d-flex align-items-center">
+                                    <h1>
+                                        Genex Solutions... <br>
+                                        To Save Your Time
+                                    </h1>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="images/slider1.png" alt="slider1" class="img-fluid w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h1>
+                                        Genex Solutions... <br>
+                                        To Save Your Time
+                                    </h1>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="images/slider1.png" alt="slider1" class="img-fluid w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End banner section -->
+
+    <!-- About Us Section -->
+    <section class="common-pd">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Video</h2>
+            </div>
+            <div class="vdo-container">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/nWwpyclIEu4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+    <section class="common-pd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/about-us.jpg" alt="Abou Us" class="img-fluid">
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="">
+                        <h2 class="section-title">About Us</h2>
+                    </div>
+                    <p>
+                        Orionzi is a e- smart and simplest cloud-based WMS platform specifically designed for all
+                        enterprises looking to switch from a manual process to a fully automated system with a
+                        cost-effective solution. Orionzi WMS platform is specially developed to support your day to day
+                        operations for your single or multiple warehouses. A meticulously designed interface allows you
+                        to operate centrally via a computing device, cellular or any other handheld device. It has
+                        inbuilt complex algorithms and advanced AI to solve troublesome pains of operations. Orionzi WMS
+                        platform is efficient and easy to use and operate...
+                    </p>
+                    <p><a href="#" class="btn btn-primary">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="common-pd bg-solid industries">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Industries</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <div class="card Served">
+                        <div class="card-body pb-0">
+                            <div class="">
+                                <img src="images/industries/auto-ancillary.jpg" alt="" class="img-fluid w-100">
+                                <h5 class="pt-4">Auto &amp; Ancillary</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card Served">
+                        <div class="card-body pb-0">
+                            <div class="">
+                                <img src="images/industries/pharmaceutical.jpg" alt="" class="img-fluid w-100">
+                                <h5 class="pt-4">Pharmaceutical</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card Served">
+                        <div class="card-body pb-0">
+                            <div class="">
+                                <img src="images/industries/chemical-and-petrochemical.jpg" alt=""
+                                    class="img-fluid w-100">
+                                <h5 class="pt-4">Chemical & Petrochemicals</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card Served">
+                        <div class="card-body pb-0">
+                            <div class="">
+                                <img src="images/industries/fmcg.jpg" alt="" class="img-fluid w-100">
+                                <h5 class="pt-4">FMCG</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card Served">
+                        <div class="card-body pb-0">
+                            <div class="">
+                                <img src="images/industries/transport.jpg" alt="" class="img-fluid w-100">
+                                <h5 class="pt-4">Transport & Logistics</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card Served">
+                        <div class="card-body pb-0">
+                            <div class="">
+                                <img src="images/industries/oil-gas.jpg" alt="" class="img-fluid w-100">
+                                <h5 class="pt-4">Oil & Gas</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card Served">
+                        <div class="card-body pb-0">
+                            <div class="">
+                                <img src="images/industries/food-and-behavirage.jpg" alt="" class="img-fluid w-100">
+                                <h5 class="pt-4">Food & Beverages</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card Served">
+                        <div class="card-body pb-0">
+                            <div class="">
+                                <img src="images/industries/healthcare.jpg" alt="" class="img-fluid w-100">
+                                <h5 class="pt-4">Healthcare & Hospital</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry CTA -->
+    <section class="common-pd enquiry-cta" style="background-image: url(images/24hr.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-8"></div>
+            </div>
+            <div class="text-center text-white">
+                <h3> Save time and resource utility with e- smart solution and have a <br>
+                    broader view over single dashboard.</h3>
+            </div>
+            <div class="text-center text-white">
+                <a href="#" class="btn enquiry-button">
+                    Enquire Now
+                    <span></span><span></span><span></span><span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--End Enquiry CTA -->
+
+    <!-- Start Features -->
+    <section class="common-pd">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Features</h2>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box">
+                        <img src="images/features/integrated-logistics-01.jpg" class="img-fluid vert-move"
+                            alt="barcode">
+                        <div class="mt-xl-1 green-top-border">
+                            <p class="pt-2">Barcode/RFID Solution</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box mt-xl-5">
+                        <img src="images/features/ASN-workflow-01.jpg" class="img-fluid vert-move1" alt="asn">
+                        <div class="mt-xl-1 blue-top-border">
+                            <p class="pt-2">ASN Workflow</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box">
+                        <img src="images/features/inventory-management-01.jpg" class="img-fluid vert-move"
+                            alt="Inventory">
+                        <div class="mt-xl-1 red-top-border">
+                            <p class="pt-2">Inventory Management</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box mt-xl-5">
+                        <img src="images/features/order-management-01.jpg" class="img-fluid vert-move1" alt="barcode">
+                        <div class="mt-xl-1 pink-top-border">
+                            <p class="pt-2">Order Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box">
+                        <img src="images/features/invoice-automation-01.jpg" class="img-fluid vert-move1"
+                            alt="Invoice Automation">
+                        <div class="mt-xl-1 yellow-top-border">
+                            <p class="pt-2">Invoice Automation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box mt-xl-5">
+                        <img src="images/features/inward-outward-01.jpg" class="img-fluid vert-move" alt="asn">
+                        <div class="mt-xl-1 navi-blue-top-border">
+                            <p class="pt-2">Inward/Outward</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box">
+                        <img src="images/features/picking-packing-01.jpg" class="img-fluid vert-move1" alt="Inventory">
+                        <div class="mt-xl-1 orange-top-border">
+                            <p class="pt-2">Picking Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box mt-xl-5">
+                        <img src="images/features/kitting-packing-01.jpg" class="img-fluid vert-move" alt="barcode">
+                        <div class="mt-xl-1 pink-top-border">
+                            <p class="pt-2">Kitting & Packing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box">
+                        <img src="images/features/relogistics-01.jpg" class="img-fluid vert-move1"
+                            alt="Invoice Automation">
+                        <div class="mt-xl-1 violet-top-border">
+                            <p class="pt-2">Relogistics/Reverse </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="feature-box mt-xl-5">
+                        <img src="images/features/integrated-logistics-01.jpg" class="img-fluid vert-move" alt="asn">
+                        <div class="mt-xl-1 green-top-border">
+                            <p class="pt-2">Integrated Logistics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Features -->
+
+    <!-- start Benefit -->
+    <section class="common-pd benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="">
+                        <img src="images/benifit-man.png" class="img-fluid benefit-img">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h2 class="section-title text-white">Benefits</h2>
+                        <p class="text-white">It has the power and capability to fulfil Inventory Management needs. The
+                            benefits of using
+                            the WMS
+                            platform are as follows</p>
+                    </div>
+                    <div class="">
+                        <ul class="benifit-list">
+                            <li class="text-white"><img src="images/benefit-list.png" alt="" srcset=""><span>Improved
+                                    Productivity</span></li>
+                            <li class="text-white"><img src="images/benefit-list.png" alt="" srcset=""><span>Increased
+                                    Efficiency</span></li>
+                            <li class="text-white"><img src="images/benefit-list.png" alt="" srcset=""><span>Reduce
+                                    Inventory Handling cost</span></li>
+                            <li class="text-white"><img src="images/benefit-list.png" alt="" srcset=""><span>Inventory
+                                    Analysis via Report generation</span></li>
+                            <li class="text-white"><img src="images/benefit-list.png" alt="" srcset=""><span>Error Free
+                                    Transactions/Operations</span></li>
+                            <li class="text-white"><img src="images/benefit-list.png" alt="" srcset=""><span>Increased
+                                    Efficiency</span></li>
+                            <li class="text-white"><img src="images/benefit-list.png" alt="" srcset=""><span>Product
+                                    Management via Barcode</span></li>
+                            <li class="text-white"><img src="images/benefit-list.png" alt="" srcset=""><span>Shortly,
+                                    you will have more money in your
+                                    pocket and a better handle on your business</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Benefit -->
+
+    <!-- USP section -->
+    <section class="common-pd usp">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">USP,s</h2>
+            </div>
+            <div class="row" style="position: relative; z-index: 1;">
+                <div class="col-lg-3 col-md-6 col-6">
+                    <img src="images/usp-agity.png" alt="usp-agity" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <img src="images/usp-data-security.png" alt="usp-data-security" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <img src="images/usp-data-visibility.png" alt="usp-data-visibility" class="img-fluid">
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <img src="images/usp-scalability.png" alt="usp-scalability" class="img-fluid">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End USP section -->
+
+    <!-- blogs section -->
+    <section class="common-pd home-blog" style="background-color: #f4fafc;">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Blogs</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/blogs/home-blogs/blog1.jpg" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Best Warehouse & Distribution Center
+                                Practices for...</h5>
+                            <p class="card-text text-justify">
+                                Even though Warehouse management is complex/complicated, if done properly it can reduce
+                                cost, increase operational efficiency and improve customer satisfaction. It’s easy to
+                                achieve this ...
+                            </p>
+                            <a href="#" class="text-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/blogs/home-blogs/blog1.jpg" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Best Warehouse & Distribution Center
+                                Practices for...</h5>
+                            <p class="card-text text-justify">
+                                Even though Warehouse management is complex/complicated, if done properly it can reduce
+                                cost, increase operational efficiency and improve customer satisfaction. It’s easy to
+                                achieve this ...
+                            </p>
+                            <a href="#" class="text-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/blogs/home-blogs/blog1.jpg" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Best Warehouse & Distribution Center
+                                Practices for...</h5>
+                            <p class="card-text text-justify">
+                                Even though Warehouse management is complex/complicated, if done properly it can reduce
+                                cost, increase operational efficiency and improve customer satisfaction. It’s easy to
+                                achieve this ...
+                            </p>
+                            <a href="#" class="text-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End blogs section -->
+
+    <!-- testimonial  -->
+    <section class="common-pd testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="testimonial-info text-center">
+                        <div class="quote-mt"><img src="images/quote.png" alt="quote"></div>
+                        <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                        <div class="d-flex justify-content-center">
+                            <h5 class="text-white">
+                                Jon Vieira <br>Designer
+                            </h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End testimonial  -->
+
+    <!-- Email Id Section -->
+    <section class="common-pd news-room">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Feed in your email ID to
+                        enter the news room</h5>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="validate-text" id="validate-text"
+                                    placeholder="Enter Your Mail">
+                                <span class="input-group-addon primary">Submit <span class="fa fa-search"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Email Id Section -->
+
+    <!-- Footer Section -->
+    <footer class="common-pd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div>
+                        <img src="images/logo.png" alt="Orionzi Logo">
+                        <p class="pt-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h5 class="my-xl-3">Quick Links</h5>
+                        <ul class="">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Industries</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="">
+                        <h5 class="my-xl-3">Contact Us</h5>
+                        <p>C510, 5th Floor, Wisteria<br>Fortune,Bhumkar Square<br>Hinjewadi Phase II Road,<br>Wakad, Pune -
+                            411057<br>Maharashtra - India </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Footer Section -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Fixed header on scroll -->
+        <script>
+            $(window).scroll(function () {
+                windowWidth = $(window).width();
+
+                if (windowWidth > 768) {
+                    var scroll = $(window).scrollTop();
+
+                    if (scroll >= 150) {
+                        $(".navbar").addClass("header-fixed shrink animated slideInDown");
+                    } else {
+                        $(".navbar").removeClass("header-fixed shrink animated slideInDown");
+                    }
+                }
+            });
+        </script>
+</body>
+
+</html>
